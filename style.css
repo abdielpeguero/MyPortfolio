@@ -1,0 +1,300 @@
+/**General style settings**/
+
+body {
+    background-color: #191919;
+    margin: 0px;
+}
+
+h1, h2,h3, h4, h5, h6 {
+    color: #FFFFFF;
+    font-family: inter;
+    text-align: inherit;
+    margin: 0px;
+    line-height: 1.3;
+}
+
+p {
+    color: #9B9B9B;
+    font-family: inter;
+    text-align: inherit;
+    margin: 0px;
+}
+
+strong {
+    color: #FFFFFF;
+    font-family: inter;
+    font-weight: 400;
+    margin: 0px;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+p {font-sizes: 1rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+button {
+    display: flex;
+    background-color: #FFFFFF;
+    font-family: inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #222222;
+    line-height: 24px; /**140**/
+    padding: 16px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    max-width: 300px;
+    gap: 8px;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: #9B9B9B;
+}
+
+.logo_nav {
+    cursor: pointer;
+}
+
+.logo_footer {
+    cursor: pointer;
+}
+
+
+/**Create a Navb with menu list**/
+header {
+    display: flex;
+    position: fi;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 10%;
+}
+
+.nav__links {
+    list-style: none;
+    align-items: center;
+    padding: 0px;
+    gap: 48;
+}
+
+.nav__links ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav__links li {
+    display: inline-block;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #FFFFFF;
+}
+
+.nav__links li a:click {
+    color: #9B9B9B;
+}
+
+.nav__links li a:focus {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+li, a {
+    color: #666666;
+    font-family: inter;
+    text-decoration: none;
+    font-size: 16;
+}
+
+/**brief intro about me,...*/
+.my__Intro {
+    padding: 96px 16%;
+    text-align: center;
+    gap: 24px;
+}
+
+.hi {
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 150%; /* 60px */
+    margin: auto;  
+}
+
+.intro__explained {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    max-width: 900px;
+    min-width: 480px;
+    margin: auto;
+}
+
+/**Let's display my latest projects**/
+
+.pd_subtitle {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    font-style: normal;
+}
+
+.pd_role {
+    color: #9B9B9B;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.pd_text {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px; /* 140% */
+}
+
+.my_work {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 96px 24%;
+    gap: 96px;    
+}
+
+.project_1 {
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+    padding: 64px 64px 0px 64px;
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 40px
+}
+
+.project_1 {
+    transition: all 0.3s ease 0s;
+}
+
+.project_1:hover {
+    background-color: #2B2B2B;
+}
+
+.project_logo {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
+
+.project_details {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;  
+}
+
+.project_mock {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.project_2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+    padding: 64px 64px;
+    border-radius: 24px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    gap: 40px;
+}
+
+.project_2 {
+    transition: all 0.3s ease 0s;
+}
+
+.project_2:hover {
+    background-color: #2B2B2B;
+}
+
+.wanna_see_more {
+    display: flex;
+    align-items: center;
+    padding: 16;
+    gap: 24px;
+}
+
+.more_projects_description {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/**Banner inviting people to work with me**/
+
+.want_work_together {
+    display: grid;
+    background-color: #000;
+    padding: 56px 64px;
+    text-align: center;
+    justify-items: center;
+    margin-top: 96px;
+    margin-bottom: 96px;
+    gap: 32px;
+}
+
+.work_together_details {
+    display: grid;
+    padding: 0px;
+    margin: auto;
+    gap: 16px;
+}
+
+/**Let's create a footer**/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 48px 10%;
+    border-top: 1px solid;
+    border-top-color: #222222;
+}
+
+.footer_menu {
+    list-style: none;
+}
+
+.footer_socialmedia {
+    list-style: none;
+}
+
+/**Body content**/
