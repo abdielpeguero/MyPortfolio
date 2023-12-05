@@ -13,32 +13,48 @@
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" type="img/x-icon"  href="Web_assets\images\AP Favicon.svg">
-
+        <script src="script.js" defer></script>
     </head>
     <body>
         <main>
-            <!--Create a Navb with menu list-->
-            <header>
-                <img class="logo_nav" src="Web_assets\images\Ap lgo.svg">
-                <nav>
-                    <ul class="nav__links">
-                        <li><a href="#" class="navbar_focus">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Resume</a></li>
-                    </ul>
-                </nav>
-                <!--<a class="cta" href="#"><button>Contacto</button></a>-->
-                <button>Let's connect <img class="button_icon" src="Web_assets\images\email_icon.svg"</button>
-            </header>
-            
+            <!--Create a Navbar-->
+            <nav class="navbar">
+                <di class="menu-and-connectbtn">
+                    <img class="logo_nav" src="Web_assets/images/AP Favicon.svg">
+                    
+                    <!--Create a menu list-->
+                    <div class="navbar-links">
+                        <ul>
+                            <li>
+                                <a href="#" class="navbar_focus">Home</a>
+                            </li>
+                            <li>
+                                <a href="#">About</a>
+                            </li>
+                            <li>
+                                <a href="#">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#">Resume</a>
+                            </li>
+                        </ul>
+                        <!--create a contact buttun-->
+                        <button class="btn-lets-connect-navbar">Let's connect <img class="button_icon" src="Web_assets/images/email_icon.svg"</button>
+                    </div>
+                </di> 
+
+                <!--create mobile burger menu-->
+                <img class="burger-menu" src="Web_assets/images/menu_FILL0_wght400_GRAD0_opsz24.svg">
+                
+            </nav>
+
             <!--Section with brief intro about me, my work and professional goals-->
             <section class="my__Intro">
-                <h1 class="hi">Hi! I'm Abdiel Peguero &#128075</h1>
+                <h1 class="hi"> &#128075 Hi! I'm Abdiel Peguero</h1>
                 <p class="intro__explained">
                     I’m a <strong>Product Designer</strong> who loves crafting experiences through digital products that <strong>make people’s life better.</strong> 
                     I consider myself a generalist, but with my special skills in <strong>Visual Design, UX Research and Business Strategy</strong> 
-                    I am able to create products that <strong>provide value and revenue growth for the business. </strong>  
+                    I am able to create products that <strong>provide value and revenue growth for the business.</strong>  
                 </p>
             </section>
             
@@ -47,61 +63,62 @@
             <article class="my_work">
                 <h3>My work</h3>
 
-                <!--Opret project-->
-                <article class="project_1">
-                    <section class="project_details_1">
-                        <img class="project_logo" src="Web_assets\images\Opret logo.svg">
-                        <h2 class="pd_subtitle">Opret</h2>
-                        <h5 class="pd_role">UX/UI - 2023</h5>
-                        <p class="pd_text">Transforming the way Dominicans get around in the city of Sto Dgo</p>
-                        <button>View case study <img class="button_icon" src="Web_assets\images\right arrow icon.svg" </button>
-                    </section>
-                    <img class="project_mock" src="Web_assets\images\Opret mockup screens.png">
-                </article>
-
-                <!--Momento project-->
-                <article class="project_2">
-                    <section class="project_details_2">
-                        <img class="project_logo" src="Web_assets\images\Momento logo.svg">
-                        <h2 class="pd_subtitle">Momento</h2>
-                        <h5 class="pd_role">UX/UI - 2022/23</h5>
-                        <p class="pd_text">Redesigning the best Web App to buy and sell crypto in Dom. Rep.</p>
-                        <button>View project <img class="button_icon" src="Web_assets\images\right arrow icon.svg" </button>
-                    </section>
-                    <img class="project_mock" src="Web_assets\images\Momento mockup screens.png">
-                </article>
-
-                <!--ColaPago project-->
-                <article class="project_1">
-                    <section class="project_details_1">
-                        <img class="project_logo" src="Web_assets\images\ColaPago logo.svg">
-                        <h2 class="pd_subtitle">Cola Pago</h2>
-                        <h5 class="pd_role">UI - 2022/23</h5>
-                        <p class="pd_text">A marketplace of that helps users find the best discounts available.</p>
-                        <button>View prototype <img class="button_icon" src="Web_assets\images\right arrow icon.svg" </button>
-                    </section>
-                    <img class="project_mock" src="Web_assets\images\ColaPago mockup screens.png">
-                </article>
-
-                <article class="wanna_see_more">
-                    <article class="more_projects_description">
-                        <h5>Want to see more projects?</h5>
-                        <p class="pd_text">Let me show you!</p>
+                <div class="portfolio-projects">
+                    <!--Opret project-->
+                    <article class="project_1">
+                        <img class="project_mock" src="Web_assets\images\new-opret-mockup-screens.png">
+                        <section class="project_details_1">
+                            <img class="project_logo" src="Web_assets\images\Opret logo.svg">
+                            <h2 class="pd_subtitle">Opret</h2>
+                            <h5 class="pd_role">UX/UI - 2023</h5>
+                            <p class="pd_text">Transforming the way Dominicans get around in the city of Sto Dgo</p>
+                            <button2>View more <img class="button_icon2" src="Web_assets\images\right_arrow_white_icon.svg" </button2>
+                        </section>
                     </article>
-                    <button>More projects <img class="button_icon" src="Web_assets\images\right arrow icon.svg"</button>
-                  </article>
+    
+                    <!--Momento project-->
+                    <article class="project_1">
+                        <img class="project_mock" src="Web_assets\images\Momento mockup screens.png">
+                        <section class="project_details_1">
+                            <img class="project_logo" src="Web_assets\images\Momento logo.svg">
+                            <h2 class="pd_subtitle">Momento</h2>
+                            <h5 class="pd_role">UX/UI - 2022/23</h5>
+                            <p class="pd_text">Redesigning the best Web App to buy and sell crypto in Dom. Rep.</p>
+                            <button2>View more <img class="button_icon" src="Web_assets\images\right_arrow_white_icon.svg" </button2>
+                        </section>
+                    </article>
+    
+                    <!--ColaPago project-->
+                    <article class="project_1">
+                        <img class="project_mock" src="Web_assets\images\new-colapago-mockup screens-1.png">
+                        <section class="project_details_1">
+                            <img class="project_logo" src="Web_assets\images\ColaPago logo.svg">
+                            <h2 class="pd_subtitle">Cola Pago</h2>
+                            <h5 class="pd_role">UI - 2022/23</h5>
+                            <p class="pd_text">A marketplace of that helps users find the best discounts available.</p>
+                            <button2>View more <img class="button_icon" src="Web_assets\images\right_arrow_white_icon.svg" </button2>
+                        </section>
+                    </article>
+    
+                    <article class="wanna_see_more">
+                        <article class="more_projects_description">
+                            <h5>Want to see more projects?</h5>
+                            <p class="pd_text">Let me show you!</p>
+                        </article>
+                        <button>More projects <img class="button_icon" src="Web_assets\images\right_arrow_black_icon.svg"</button>
+                      </article>
+                </div>
             </article>
 
-            <!--Banner inviting people to work with me -->
+            <!--Banner inviting people to work with me
             <article class="want_work_together">
                 <article class="work_together_details">
-                    <h2>Let’s Work Together!</h2>
+                    <h2 class="work-tog">Let’s Work Together!</h2>
                     <p>You liked my work? Let’s talk about how I can help you finish your project.</p>
                 </article>
                 <button>Let's chat <img class="button_icon" src="Web_assets\images\email_icon.svg"</button>
-            </article>   
-        </main>
-        
+            </article>-->
+                    
 
         <!--Let's create a footer-->
         <footer>
@@ -120,5 +137,6 @@
             </ul>
         </footer>
 
+        </main>
     </body>
 </html>
