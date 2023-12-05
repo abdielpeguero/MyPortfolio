@@ -136,7 +136,7 @@ button2:focus {
     margin: 0;
     padding: 32px 10%;
     background-color: hsla(0, 0%, 10%, 0.902);
-    color: hsl(0, 0%, 13%);
+    color: hsl(0, 0%, 24%);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid;
     border-bottom-color: hsl(0, 0%, 13%);
@@ -612,4 +612,11 @@ footer {
     .footer_socialmedia {
         margin-bottom: 0;
     }
+
+    @media (max-width:360px) {
+
+        .my__Intro {
+            padding: 12em 0;
+            margin: 8% 0 0 0;
+        }
 }
