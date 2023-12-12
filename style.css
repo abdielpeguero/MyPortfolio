@@ -211,7 +211,7 @@ button2:focus {
     font-weight: 500;
 }
 
-.navbar_focus {
+.navbar-links li a.navbar_focus {
     color: #FFFFFF;
     font-weight: 500;
 }
@@ -401,6 +401,239 @@ li, a {
     font-size: clamp(1.90rem, 4vw, 2.5rem);
 }**/
 
+/**About me page*/
+
+.container-about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 12em 16% 7em 16%;
+    text-align: center;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    text-align: start;
+    gap: 4em;
+}
+
+.about-me-AndTitle {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 1.5em;
+}
+
+.about-h3 {
+    margin: 0;
+}
+
+.about-me-details {
+    max-width: 724px;
+}
+
+.about__explained {
+    font-style: normal;
+    font-size: clamp(1rem, 3vw, 1.20rem);
+    font-weight: 350;
+    line-height: 150%; /*36px*/
+    max-width: 1080px;
+    min-width: 628px;
+    padding: 0;
+    margin: 0 0 1.5em;
+    min-width: 250px;
+    gap: 24px;
+}
+
+.about-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin-top: 2em;
+    gap: 1.5em;
+}
+
+.about-me-pics {
+    width: 10em;
+    margin: 0 auto;
+    transition: all 0.3s ease 0s;
+}
+
+.about-me-pics:hover {
+    color: #FFFFFF;
+    box-shadow: hsla(0, 0%, 100%, 0.521);
+    backdrop-filter: blur(13px);
+}
+
+/**About me - testimonies**/
+
+.container-testimonies{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 11em 16% 7em 16%;
+    text-align: center;
+    gap: 5em;
+}
+
+.testimonies-h3 {
+    margin: 0;
+}
+
+.testimonies {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    text-align: start;
+    gap: 5em;
+    max-width: 964px;
+}
+
+.quotation-mak {
+    width: 2rem;
+}
+
+.testimonies-details {
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 12px;
+    max-width: 964px;
+}
+
+.testim-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.testim-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.testim-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.testimonies-details:hover {
+    background-color: #2B2B2B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.testimony_text {
+    font-style: normal;
+    font-size: clamp(1rem, 3vw, 1.10rem);
+    font-weight: 350;
+    line-height: 150%; /*36px*/
+}
+
+.testim-person-photo {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.person-photo {
+    width: 5rem;
+}
+
+.testim-person-role{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-name {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 450;
+    font-size: clamp(.90rem, 3vw, 1rem);
+    line-height: 24px; /* 140% */
+    margin: 0;
+}
+
+.person-role {
+    color: #9B9B9B;
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(.80rem, 3vw, .90rem);
+    margin: 0;
+}
+
+/**Projects page*/
+
+.project-container{
+    padding: 12em 0;
+}
+
+.my-process {
+    display: flex;
+    flex-direction: column;
+    padding: 8em 14% 7em 14%;
+    text-align: center;
+    min-width: 356px;
+    gap: 48px;
+}
+
+.double-diamond-framework {
+    margin: 0 auto;
+    width: 16em;
+}
+
+.double-diamond-pics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    flex-wrap: wrap;
+    margin: 2em auto;
+    gap: 8em;
+    max-width: 764px;
+    
+}
+
+.my-clients {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+    padding: 8em 10%;
+    gap: 48px;
+}
+
+.clients-logo {
+    cursor: pointer;
+    width: 8em;
+    margin: 0 auto;
+}
+
+.clients-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    gap: 88px;
+    flex-wrap: wrap;
+}
+
 /**Let's create a footer**/
 
 footer {
@@ -477,6 +710,24 @@ footer {
         display: flex;
         flex-direction: row;
     }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .testim-1 {
+        flex-direction: column;
+    }
+    
+    .testim-2 {
+        flex-direction: column;
+    }
+
 }
 
 @media (max-width:1080px) {
@@ -494,8 +745,6 @@ footer {
         flex-direction: column;
     }
 }
-
-/**media queries*/
 
 @media (max-width:960px) {
 
@@ -594,6 +843,10 @@ footer {
 
     .footer_socialmedia {
         margin-bottom: .75em;
+    }
+
+    .about-h3 {
+        margin: 0 auto;
     }
 }
 
