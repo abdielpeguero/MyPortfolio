@@ -138,6 +138,46 @@ button2:focus {
     background-color: #2B2B2B;
 }
 
+.btn3-icon-Text-on-and-off {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 16px 24px;
+    border: 2px solid #ECEDF4;
+    border-radius: 12px;
+    cursor: pointer;
+    gap: 8px;
+    transition: all 0.3s ease 0s;
+}
+
+.btn3-icon-Text-on-and-off:hover {
+    background-color: #000000;
+}
+
+.btn3-icon-Text-on-and-off:active {
+    background-color: #2B2B2B;
+}
+
+.btn3-text {
+    font-family: inter;
+    font-size: clamp(.90rem, .50vw, 1rem);
+    font-style: normal;
+    font-weight: 500;
+    color: #ECEDF4;
+    line-height: 24px; /**140**/
+    margin: 0;
+    cursor: pointer;
+}
+
+.button_icon {
+    width: 22px;
+    margin: 0;
+    cursor: pointer;
+}
+
+
 /**Create a Navb with menu list**/
 
 .navbar {
@@ -408,7 +448,7 @@ li, a {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 12em 16% 7em 16%;
+    padding: 12em 12% 7em 12%;
     text-align: center;
 }
 
@@ -477,7 +517,7 @@ li, a {
     flex-direction: column;
     flex-wrap: wrap;
     margin: 0 auto;
-    padding: 11em 16% 7em 16%;
+    padding: 11em 12% 7em 12%;
     text-align: center;
     gap: 5em;
 }
@@ -507,6 +547,7 @@ li, a {
     border-radius: 24px;
     gap: 12px;
     max-width: 964px;
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .testim-container {
@@ -529,7 +570,6 @@ li, a {
 
 .testimonies-details:hover {
     background-color: #2B2B2B;
-    transition: all 0.3s ease-in-out 0s;
 }
 
 .testimony_text {
@@ -633,6 +673,124 @@ li, a {
     gap: 88px;
     flex-wrap: wrap;
 }
+
+
+/**Resume page**/
+
+.container-resume{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* width: 95%; */
+    margin: 0 auto;
+    padding: 11em 12% 7em 12%;
+    text-align: center;
+    gap: 4em;
+}
+
+.title-and-download-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-h3 {
+    margin: 0;
+}
+
+.resume {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+    text-align: start;
+    gap: 5em;
+    max-width: 964px;
+}
+
+.resume-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+.resume-details {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 24px;
+    border-radius: 24px;
+    gap: 12px;
+    max-width: 964px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.resume-details:hover {
+    background-color: #2B2B2B;
+}
+
+.resume_text {
+    min-width: 118px;
+    font-size: clamp(1rem, 3vw, 1.10rem);
+    font-style: normal;
+    font-weight: 300;
+}
+
+.resu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.job-description_text {
+    font-style: normal;
+    font-size: clamp(1rem, 3vw, 1.10rem);
+    font-weight: 350;
+    line-height: 150%; /*36px*/
+}
+
+.testimonies-details:hover {
+    background-color: #2B2B2B;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.company-and-role-name {
+    display: flex;
+    gap: 8px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(1rem, 3vw, 1.10rem);
+    line-height: 24px; /* 140% */
+    margin: 0;
+}
+
+.industry {
+    color: #9B9B9B;
+    font-style: normal;
+    font-weight: 300;
+    font-size: clamp(.80rem, 3vw, .90rem);
+    margin: 0;
+}
+
+/**Resume-Education**/
+
+.container-education{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 11em 0;
+    margin: 0;
+    text-align: center;
+    gap: 4em;
+}
+
+.education-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
+
 
 /**Let's create a footer**/
 
@@ -773,6 +931,7 @@ footer {
         align-items: flex-start;
         position: fixed;
         width: 100%;
+        background-color: hsl(0, 0%, 10%);
         /* height: 100vh;
         height: 100dvh; */
     }
@@ -848,21 +1007,24 @@ footer {
     .about-h3 {
         margin: 0 auto;
     }
+
+    .btn3-text {
+        display: none;
+    }
+
+    .btn3-icon-Text-on-and-off {
+        padding: 14px 18px;
+    }
 }
 
-/* @media (max-width:430px) {
+@media (max-width:540px) {
 
-    .my__Intro {
-        padding: 12em 0;
-        margin: 8% 0 0 0;
+    .resume-details {
+        flex-direction: column;
     }
 
-    .burger-menu {
-        top: 1.5rem;
-        width: 2rem;;
-        height: 2rem;
+    .container-resume {
+        width: 100%;
+        padding: 11em 11% 7em 11%;
     }
-
-    .logo_nav {
-        width: 2rem;
-    } */
+}
