@@ -677,18 +677,18 @@ li, a {
 
 /**Resume page**/
 
-.container-resume{
+.container-expe-educ-skill{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    /* width: 95%; */
-    margin: 0 auto;
+    align-content: center;
+    margin: 0;
     padding: 11em 12% 7em 12%;
     text-align: center;
     gap: 4em;
 }
 
-.title-and-download-btn {
+.title-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -774,20 +774,95 @@ li, a {
 
 /**Resume-Education**/
 
-.container-education{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding: 11em 0;
-    margin: 0;
-    text-align: center;
-    gap: 4em;
-}
-
 .education-wrapper {
     display: flex;
     flex-direction: column;
     gap: 4em;
+}
+
+/**Resume-skills**/
+
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 48px;
+    max-width: 900px;
+}
+
+.skill_text {
+    min-width: 149px;
+    font-size: clamp(1rem, 3vw, 1.10rem);
+    font-style: normal;
+    font-weight: 250px;
+}
+
+.skill-languages {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+.language {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    gap: 12px;
+    max-width: 350px;
+}
+
+.lang-level {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circles-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.circles-active {
+    width: clamp(0.9rem, 3vw, 1.10rem);
+    height: clamp(0.9rem, 3vw, 1.10rem);
+    background-color: #4A834D;
+    border-radius: 50%;
+}
+
+.circles-inactive {
+    width: clamp(0.9rem, 3vw, 1.10rem);
+    height: clamp(0.9rem, 3vw, 1.10rem);
+    background-color: #2F3630;
+    border-radius: 50%;
+}
+
+
+.skill-general {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.skills-container {
+    display: flex;
+    gap: 56px;
+}
+
+.skill-column-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: space-between;
 }
 
 
@@ -841,7 +916,7 @@ footer {
     gap: 16px;
 }
 
-/**Body content**/
+/**End of Body content**/
 
 
 /**media queries**/
@@ -1017,7 +1092,7 @@ footer {
     }
 }
 
-@media (max-width:540px) {
+@media (max-width:680px) {
 
     .resume-details {
         flex-direction: column;
@@ -1026,5 +1101,13 @@ footer {
     .container-resume {
         width: 100%;
         padding: 11em 11% 7em 11%;
+    }
+
+    .skill-languages {
+        flex-wrap: wrap;
+    }
+
+    .skill_text {
+        min-width: 120px;
     }
 }
