@@ -867,6 +867,27 @@ li, a {
 
 
 
+/**Case Studies iFrames**/
+
+.my-case-studies {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-items: center;
+    padding: 8em 10%;
+    gap: 48px;
+}
+
+#Case-study-container {
+    display: flex;
+    border: 1px solid hsl(0, 0%, 10%);
+    width: 70em;
+    height: 64em;
+    border-radius: 24px;
+}
+
+
 /**Let's create a footer**/
 
 footer {
@@ -961,6 +982,11 @@ footer {
         flex-direction: column;
     }
 
+    #Case-study-container {
+        width: 54em;
+        height: 44em;
+    }
+
 }
 
 @media (max-width:1080px) {
@@ -977,13 +1003,17 @@ footer {
         display: flex;
         flex-direction: column;
     }
+
+    #Case-study-container {
+        width: 44em;
+        height: 44em;
+    }
 }
 
 @media (max-width:960px) {
 
     main {
         gap: .75em;
-
     }
 
     .burger-menu {
@@ -1068,7 +1098,7 @@ footer {
 
     footer {
         flex-direction: column;
-        margin-top: 96px;;
+        margin-top: 64px;
     }
 
     .logo_footer {
@@ -1090,7 +1120,20 @@ footer {
     .btn3-icon-Text-on-and-off {
         padding: 14px 18px;
     }
+
+    #Case-study-container {
+        width: 40em;
+    }
 }
+
+@media (max-width:790px) {
+
+    #Case-study-container {
+        width: 32em;
+        height: 44em;
+    }
+}
+
 
 @media (max-width:680px) {
 
@@ -1109,5 +1152,26 @@ footer {
 
     .skill_text {
         min-width: 120px;
+    }
+
+    .my-case-studies {
+        padding: 8em 4% 2em 4%;
+    }
+
+    #Case-study-container {
+        width: 24em;
+        height: 44em;
+    }
+
+    footer {
+        margin-top: 64px;
+    }
+}
+
+@media (max-width:470px) {
+
+    #Case-study-container {
+        width: 20em;
+        height: 34em;
     }
 }
